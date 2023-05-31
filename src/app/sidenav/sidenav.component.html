@@ -1,0 +1,35 @@
+<nav class="side-nav text-white">
+  <div class="side-inner-nav">
+    <h6 class="pt-5" ></h6>
+      <div class="buttons mt-3 py-1 px-2 d-flex align-items-center">
+        <i class="fa-solid fa-house btn-icon" style="color: #f5f7f9;"></i>
+        <a class="text-white button-a" href="home"><h5 class="ms-2 pt-2">Dashboard</h5></a>
+      </div>
+
+      <div class="buttons mt-3 py-1 px-2 d-flex align-items-center">
+        <i class="fa-regular fa-calendar-check btn-icon" style="color: #fbfcfe;"></i>
+        <a class="text-white button-a" href="appointmentlist"><h5 class="ms-2 pt-2">Appoinments</h5></a>
+      </div>
+
+      <div class="buttons mt-3 py-1 px-2 d-flex align-items-center">
+        <i class="fa-solid fa-user-plus btn-icon" style="color: #f7f7f7;"></i>
+        <a class="text-white button-a" href="doctor_list"><h5 class="ms-2 pt-2">Docters</h5></a>
+      </div>
+
+      <div class="buttons mt-3 py-1 px-2 d-flex align-items-center" [routerLink]="['/patient-list']">
+        <i class="fa-solid fa-hospital-user btn-icon"></i>
+                <a class="text-white button-a" href="patient-list"><h5 class="ms-2 pt-2">patients</h5></a>
+      </div>
+
+      <div class="buttons mt-3 py-1 px-2 d-flex align-items-center">
+        <i class="fa-solid fa-person-circle-plus btn-icon"></i>
+        <a class="text-white button-a" href="register-patient"><h5 class="ms-2 pt-2">add patient</h5></a>
+      </div>
+
+      <div class="buttons mt-3 py-1 px-2 d-flex align-items-center">
+        <i class="fa-solid fa-circle-plus btn-icon"></i>
+        <a class="text-white button-a" href="add-doctor"><h5 class="ms-2 pt-2">add doctor</h5></a>
+      </div>
+  </div>
+</nav>
+    

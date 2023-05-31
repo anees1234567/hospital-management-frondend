@@ -1,0 +1,123 @@
+
+ 
+       <div class="container-fluid row maindiv">
+        <div class="col-3">
+          <div><app-sidenav></app-sidenav></div>
+        </div>
+        
+       
+        <div class="col-8 pt-5">
+           <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-center">Patient Registration Form</h3>
+              <form  method="POST " enctype="multipart/form-data" >
+  
+                <div class="row mb-4">
+                  <div class="col-5">
+  
+                    <div class="form-outline">
+                      <input type="text" id="firstName" class="form-control form-control-lg" name="firistName" [(ngModel)]="firstName" />
+                      <label class="form-label" for="firstName">First Name</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-5">
+  
+                    <div class="form-outline">
+                      <input type="text" id="lastName" class="form-control form-control-lg" name="LastName"  [(ngModel)]="lastName" />
+                      <label class="form-label" for="lastName">Last Name</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row mb-4">
+                  <div class="col-5 ">
+  
+                    <div class="form-outline datepicker w-100">
+                      <input type="date" class="form-control form-control-lg" id="birthdayDate" name="dateofbirth" [(ngModel)]="dateOfBirth" />
+                      <label for="birthdayDate" class="form-label">Birthday</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-5 d-flex pt-3">
+  
+                    <h6 class="mb-2 pb-1 me-5">Gender: </h6>
+  
+                    <div class="form-check form-check-inline me-5">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="female" checked  [(ngModel)]="gender" />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline me-5">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="male"  [(ngModel)]="gender"/>
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline me-5">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                        value="other" [(ngModel)]="gender" />
+                      <label class="form-check-label" for="otherGender">Other</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row mb-4">
+                  <div class="col-5">
+  
+                    <div class="form-outline">
+                      <input type="email" id="email" class="form-control form-control-lg" name="email" [(ngModel)]="email" />
+                      <label class="form-label" for="emailAddress">Email</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-5">
+  
+                    <div class="form-outline">
+                      <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phoneNumber" [(ngModel)]="phoneNumber"/>
+                      <label class="form-label" for="phoneNumber">Phone Number</label>
+                    </div>
+  
+                  </div>
+                </div>
+
+                <div class="row mb-4">
+                  <div class="col-5">
+  
+                    <div class="form-outline">
+                      <input type="number" id="age" class="form-control form-control-lg" name="age" [(ngModel)]="age"/>
+                      <label class="form-label" for="emailAddress">age</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-5">
+  
+                    <div class="form-outline">
+                      <input type="number" id="hospitalNumber" class="form-control form-control-lg" name="hospitalNumber" [(ngModel)]="hospitalNumber" />
+                      <label class="form-label" for="phoneNumber">hospital Number</label>
+                    </div>
+  
+                  </div>
+                </div>
+
+                
+  
+                
+  
+                <div class="mt-4 pt-2 row">
+                 <div class="col-5"></div> <div class="col-3"><input (click)="onsubmit()"  class="btn btn-primary btn-lg p-2" type="submit" value="Register patient"  /></div >
+                </div>
+  
+              </form>
+            </div>
+            
+       </div >
+
+
+
+

@@ -1,0 +1,31 @@
+.doctors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagediv{
+    height: 100%;
+    z-index: 6;
+}
+
+.cardbody{
+   visibility: hidden;
+}
+.carddiv:hover .imagediv{
+    height: 75%;
+    transition: .5s;
+
+}
+
+.carddiv:hover .cardbody{
+    visibility: visible;
+}
+
+
+.h1div{
+    display: block;
+}
+.carddiv{
+    margin-bottom: 50px;
+    margin-left: 20px;
+}

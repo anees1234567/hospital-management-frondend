@@ -1,0 +1,17 @@
+<section id="section-3"  >
+    <div class="h1div">  <h1 class="text-center">Our Doctors</h1></div >
+
+
+<div class="doctors container">
+  <div *ngFor="let doctor of doctors" style="background-color: rgb(215, 219, 219); border-radius: 10px; height: 280px; width: 250px;" class="carddiv">
+    <div class="p-2  imagediv">
+      <img style="border-radius: 30px;" class="w-100 h-100" [src]="doctor.doctorImage">
+    </div>  
+    <div class="cardbody d-flex flex-column align-items-center justify-content-center">
+      <h4>{{doctor.doctorName}}</h4>
+      <h6>{{ doctor.doctorCategory}}</h6>
+    </div>
+  </div>
+</div> 
+  
+  </section>

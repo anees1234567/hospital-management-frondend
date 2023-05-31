@@ -1,0 +1,57 @@
+
+
+
+
+
+<div class="container-fluid container-bg">
+  
+  <div class="row">
+    <div class="col-3">
+      <div><app-sidenav></app-sidenav></div>
+    </div>
+    <div class="col-9">
+      <div class="mt-5 header mb-5 ">
+        <h3 class="text-dark">Appointment</h3>
+        <h6 class="text-dark mt-3">Dashbord/Appointment</h6>
+      </div>
+     <div class="me-4 ">
+
+      <table class="table bg-white table-detail  ">
+        <thead>
+          <tr>
+            <th  scope="col">No</th>
+
+            <th scope="col">Docters ID
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+
+            <th scope="col">Docters Name
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+
+            <th scope="col">Docters Category
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let items of alldetails; let i=index">
+            <th scope="row">{{i+1}}</th>
+            <td scope="row">{{items.doctorId}}</td>
+            <td>
+              <img class="dr-pic me-2" [src]="items.doctorImage" alt="">{{items.doctorName}}
+            </td>
+            <td>{{items.doctorCategory}}</td>
+          </tr>
+        </tbody>
+      </table>
+    <!--  -->
+     </div>
+    </div>
+
+    <!-- END CONTENT -->
+    
+ 
+  
+
+

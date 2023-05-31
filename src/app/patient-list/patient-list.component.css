@@ -1,0 +1,55 @@
+html,
+body {
+	height: 100%;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+	
+
+    
+   
+
+.container-bg{
+    
+    background-color:#b2c4d4;
+}
+
+
+.table-detail{
+    margin-right: 20px;
+}
+.dr-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+table {
+	
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(141, 2, 2, 0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #0a0000;
+}
+
+th {
+	text-align: left;
+}
+
+
+
+
+

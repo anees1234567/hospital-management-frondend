@@ -1,0 +1,63 @@
+<div class="col-12 firistdiv d-flex pt-5" >
+    <div class="col-6 d-flex flex-column justify-content-center pb-5">
+        <h1  class="text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">provides best quality</h1>
+        <h2   class="text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Health care facilities</h2>
+    </div>
+    <div class="panel panel-skin col-5 p-4 h-75 ">
+        <div class="panel-heading ">
+                <h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Make an appoinment <small>(It's free!)</small></h3>
+                </div>
+                <div class="panel-body">
+                <form role="form" class="lead">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" name="first_name" id="first_name" [(ngModel)]="firstName" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" name="lastname" id="last_name" [(ngModel)]="LastName" class="form-control input-md">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label>date</label>
+                                <input type="date" name="date" id="date"[(ngModel)]="date" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label>Phone number</label>
+                                <input type="text" name="phonenumber" id="phone" [(ngModel)]="phonenumber" class="form-control input-md">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">select doctors</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="doctortName" [(ngModel)]="doctorName"   >
+                             <option></option>
+                              <option value=" dr maxwell">Dr Maxwell - Cardiologist</option>
+                              <option value="dr mike">dr mike - opthalmologist</option>
+                              <option value="dr stokes">dr stokes - general medicine</option>
+                              <option value="dr jane">dr jane- orthology</option>
+                            </select>
+                          </div>
+                    </div>
+
+                    
+                    <a  class="mt-4 mb-3  btn btn-primary " (click)="requestappointment()" >request appointment</a>                    
+                    <p class="lead-footer">* We'll contact you by phone & email later</p>
+                
+                </form>
+            </div>
+        </div>	
+        
+  </div>

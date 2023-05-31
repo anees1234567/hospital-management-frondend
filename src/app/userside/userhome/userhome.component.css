@@ -1,0 +1,33 @@
+.firistdiv{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-photo/abstract-blur-hospital-clinic-interior_74190-4854.jpg?size=626&ext=jpg&ga=GA1.2.141373315.1671868376&semt=ais);
+    
+
+}
+
+.panel{
+    border-radius: 20px;
+    border: 1px solid black
+}
+
+input,button{
+    background: rgb(175, 175, 175);
+    border-radius: 10px;
+}
+
+app-footer{
+    margin-top: 200px;
+}
+
+li a{
+    cursor: pointer;
+}
+
+
+
+
+
+

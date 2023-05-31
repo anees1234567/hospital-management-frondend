@@ -1,0 +1,42 @@
+<div class="container-fluid container-bg">
+  <div class="row">
+    <div class="col-3 ">
+      <div><app-sidenav></app-sidenav></div>
+    </div>
+    <div class="col-9">
+      <div class="mt-5 header mb-5">
+        <h3 class="text-dark">Appointment</h3>
+        <h6 class="text-dark mt-3">Dashbord/Appointment</h6>
+      </div>
+      <div class="me-lg-4">
+        <div class="table-responsive">
+          <table class="table bg-white table-detail">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Docters Name<i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i></th>
+                <th scope="col">Patient Name<i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i></th>
+                <th scope="col">Appointment date<i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i></th>
+                <th scope="col">phone Number<i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i></th>
+                <th scope="col">Actions<i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let appointment of allappointments;let i=index">
+                <th scope="row">{{i+1}}</th>
+                <td>
+                  {{appointment.doctorName}}
+                </td>
+                <td>{{appointment.patientName}}</td>
+                <td>{{appointment.appointmentdate}}</td>
+                <td>{{appointment.phonenumber}}</td>
+                <td class="d-flex justify-content-around me-5 "><i class="fa-solid fa-circle-plus" style="color: #3b7b91;"></i>  <i class="fa-solid fa-trash"  (click)="deleteappointment(appointment.phonenumber)" style="color: #a81a45;"></i> </td>
+              
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

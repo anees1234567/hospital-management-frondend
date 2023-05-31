@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+<div class="container-fluid container-bg">
+  
+  <div class="row">
+    <div class="col-3">
+    <app-sidenav ></app-sidenav>
+    </div>
+    <div class="col-9">
+      <div class="mt-5 header mb-5 ">
+        <h3 class="text-dark">Appointment</h3>
+        <h6 class="text-dark mt-3">Dashbord/Appointment</h6>
+      </div>
+     <div class="me-4 ">
+
+      <table class="table bg-white table-detail  ">
+        <thead style="background-color: rgb(192, 192, 184);">
+          <tr>
+            <th scope="col">NO
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+            <th scope="col">patient Name
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+            <th scope="col">phone number
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+            <th scope="col">email
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+            <th scope="col">date of birth
+              <i class="ms-2 fa-solid fa-right-left fa-rotate-90"></i>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let patients of allpatients; let i=index">
+            <td>{{i+1}}</td>
+            <td> {{patients.patientName}}</td>
+            <td>{{patients.phonenumber}}</td>
+            <td>{{patients.email}}</td>
+            <td>{{patients.dateofbirth}}</td>
+          </tr>
+        </tbody>
+      </table>
+    <!--  -->
+     </div>
+    </div>
+  </div>
+</div>
+
+    <!-- END CONTENT -->
+
+
+   
+    
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    
+        
+    <h2 class="text-center">patient list</h2>
+       
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-wrap">
+                <table class="table table-striped"><thead>
+    <tr>
+      <th>cheat number</th>
+      <th>patient name</th>
+      <th>consulting doctor</th>
+      <th>diseases</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1001</th>
+      <td>Mark Otto</td>
+      <td>Japan</td>
+      <td>$3000</td>
+      <td><a href="#" class="btn btn-success">admitted</a></td>
+    </tr>
+  </tbody>
+  </table>
+            </div>
+        </div>
+    </div>
+</div> -->

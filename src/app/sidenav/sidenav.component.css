@@ -1,0 +1,25 @@
+.side-nav{
+ 
+  width: 85%;
+  height: 140vh;
+  background-color: #576983;
+}
+.side-inner-nav{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttons{
+  width: 110%;
+  border-radius: 3px;
+}
+.buttons:hover{
+  background-color: rgba(175, 191, 228, 0.384);
+  cursor: pointer;
+}
+.btn-icon{
+  font-size: 15px;
+}
+.button-a{
+  text-decoration: none;
+}
